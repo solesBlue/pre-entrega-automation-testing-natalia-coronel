@@ -31,6 +31,13 @@ Las pruebas fueron desarrolladas de forma independiente, preparando en cada caso
 ## Comando para ejecutar las pruebas 
 python -m pytest tests/test_saucedemo.py -v
 
+## Reporte de ejecución
+
+El proyecto incluye un reporte HTML generado con Pytest que contiene los resultados de la ejecución de las pruebas automatizadas.
+Para generar o actualizar el reporte:
+
+python -m pytest tests/test_saucedemo.py -v --html=reportes/report.html --self-contained-html
+
 ## Estructura del proyecto
 
 ```text
@@ -41,7 +48,8 @@ pre-entrega-automation-testing-natalia-coronel/
 │
 ├── utils/
 │   └── helpers.py
-│
+│── reportes/
+│   └── report.html
 ├── .gitignore
 └── README.md
 
