@@ -15,3 +15,7 @@ def login(driver):
     wait.until(
         EC.url_contains("/inventory.html")
     )
+
+def agregar_primer_producto(driver):
+    botones_agregar = driver.find_elements(By.CLASS_NAME,"btn_inventory")
+    botones_agregar[0].click()
